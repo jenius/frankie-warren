@@ -182,24 +182,29 @@ h3 {
 .passions {
   margin: 0; padding: 0;
   width: 800px; margin: 0 auto;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 }
 
 .passions li {
   list-style-type: none;
   display: inline-block;
-  width: 173px; height: 187px;
   margin-right: 133px;
   cursor: pointer;
+}
+
+.passions li a {
+  width: 173px; height: 187px;
+  display: block;
+  text-decoration: none;
 }
 
 .passions li:last-child {
   margin-right: 0;
 }
 
-.passions .music { background: url('../images/music.png') no-repeat center center; }
-.passions .technology { background: url('../images/tech.png') no-repeat center center; }
-.passions .africa { background: url('../images/africa.png') no-repeat center center; }
+.passions .music a { background: url('../images/music.png') no-repeat center center; }
+.passions .technology a { background: url('../images/tech.png') no-repeat center center; }
+.passions .africa a { background: url('../images/africa.png') no-repeat center center; }
 
 .push {
   margin-left: 1.5em;
@@ -215,6 +220,45 @@ p.about {
   overflow: hidden;
 }
 
+p.contact {
+  padding-top: 0;
+  text-align: center;
+}
+
+p.contact a { color: #F8A046; }
+p.contact a:hover { color: #B87634; }
+
+#progress {
+  overflow: hidden;
+  clear: both;
+  margin-top: -30px; margin-bottom: 30px;
+}
+
+#progress ul {
+  overflow: hidden;
+  margin: 0; padding: 0;
+  margin: 0 auto;
+  float: left;
+}
+
+#progress li {
+  list-style: none;
+  float: left;
+  width: 15px; height: 15px;
+  margin-right: 20px;
+  background: #353535;
+  border-radius: 15px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#progress .active { background: #F8A046; }
+
+#progress li:last-child { margin-right: 0; }
+
+.loading { height: 400px; background: #333233 url('../images/loading.gif') 50% 50% no-repeat; }
+
 footer {
   background: #353535 url('../images/bg-dark.jpg') repeat;
   border-top: 3px solid #f8a046;
@@ -223,6 +267,7 @@ footer {
 
 footer .contain {
   width: 850px; margin: 0 auto;
+  overflow: hidden; position: relative;
 }
 
 footer p.copy {
@@ -291,17 +336,17 @@ footer a:hover {
 
 .social {
   position: absolute;
-  left: 618px;
-  top: 28px;
-  width: 200px; height: 50px;
+  left: 300px;
+  top: 11px;
+  width: 285px; height: 50px;
 }
 
 .social a {
   display: block;
-  width: 16px; height: 16px;
+  width: 48px; height: 48px;
   float: left;
   margin-right: 19px;
-  opacity: .4;
+  opacity: .7;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
